@@ -21,7 +21,7 @@ public class InputHandler : ScriptableObject, CustomInput.IGameplayActions {
 
         input.Gameplay.SetCallbacks(this);
 
-        EnableInput(InputState.Gameplay);
+        EnableInput(InputState.UI);
     }
     private void OnDisable() {
         DisableAllInput();

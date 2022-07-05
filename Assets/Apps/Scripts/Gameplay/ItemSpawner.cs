@@ -37,6 +37,7 @@ namespace EndlessRunning.Gameplay {
 
         public void StartSpawning() {
             StartCoroutine(SpawnCoroutine());
+            
         }
 
         private IEnumerator SpawnCoroutine() {

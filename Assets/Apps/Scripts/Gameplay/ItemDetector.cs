@@ -9,7 +9,7 @@ namespace EndlessRunning.Gameplay {
         private void OnTriggerEnter(Collider other) {
 
             if (other.GetComponent<Item>()) {
-                GameManager.instance.GetScore(1);
+                GameManager.instance.sharedEvent.onGetItem?.Invoke(other.GetComponent<Item>().point);
             }
         }
     } 

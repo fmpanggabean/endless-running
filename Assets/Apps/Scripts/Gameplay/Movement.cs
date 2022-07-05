@@ -14,14 +14,19 @@ namespace EndlessRunning.Gameplay {
         }
 
         private void UpdatePosition() {
+            //transform.position = GetNextPosition();
             transform.position += GetOffset();
+        }
+
+        public Vector3 GetNextPosition() {
+            return transform.position + GetOffset();
         }
 
         internal void SetSpeed(float v) {
             speed = v;
         }
 
-        private Vector3 GetOffset() {
+        public Vector3 GetOffset() {
             return direction * Time.deltaTime * speed;
         }
         public void SetXDirection(float _direction) {

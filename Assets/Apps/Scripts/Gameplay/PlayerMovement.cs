@@ -9,6 +9,7 @@ namespace EndlessRunning.Gameplay {
         private void Start() {
 
         }
+
         private void OnEnable() {
             inputHandler.onPlayerMovementPressed += SetXDirection;
         }

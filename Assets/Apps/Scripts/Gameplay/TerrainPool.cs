@@ -33,7 +33,7 @@ namespace EndlessRunning.Gameplay {
 
         private void GenerateObject() {
             for (int i=0; i<poolInfo.poolSize; i++) {
-                terrainContainer.Add(Instantiate(poolInfo.prefab, poolInfo.GetObjectPosition(i), Quaternion.identity));
+                terrainContainer.Add(Instantiate(poolInfo.prefab, poolInfo.GetObjectPosition(i), Quaternion.identity, transform));
             }
         }
     } 

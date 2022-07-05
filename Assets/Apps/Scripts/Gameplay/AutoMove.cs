@@ -12,7 +12,7 @@ namespace EndlessRunning.Gameplay {
         }
 
         private void Update() {
-            movement.SetSpeed(GameManager.instance.scrollSpeed);
+            movement.SetSpeed(GameManager.instance.GetSpeed());
         }
     } 
 }
