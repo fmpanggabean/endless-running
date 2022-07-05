@@ -10,5 +10,10 @@ namespace EndlessRunning.Core {
         public Action onGameStart;
         public Action onPauseGame;
         public Action onResumeGame;
+
+        public SharedEvent(GameManager gameManager, UIManager uiManager) {
+            gameManager.sharedEvent = this;
+            uiManager.sharedEvent = this;
+        }
     }  
 }

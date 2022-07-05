@@ -47,6 +47,8 @@ namespace EndlessRunning.Core {
             sharedEvent.onGameStart -= StartGame;
             sharedEvent.onPauseGame -= PauseGame;
             sharedEvent.onResumeGame -= ResumeGame;
+
+            input.onPausePressed -= sharedEvent.onPauseGame;
         }
 
         public float GetSpeed() {
@@ -64,7 +66,6 @@ namespace EndlessRunning.Core {
         }
 
         private void StartGame() {
-            Debug.Log("start game");
             input.EnableInput(InputState.Gameplay);
             speed = 20;
             Time.timeScale = 1;
