@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EndlessRunning.Base;
 
-namespace EndlessRunning.Gameplay {
+namespace EndlessRunning.Core {
     public class GameManager : MonoBehaviour {
         public static GameManager instance;
         public SharedEvent sharedEvent;

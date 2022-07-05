@@ -1,0 +1,17 @@
+{
+    "name": "EndlessRunning.Gameplay",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e3c022d80f750147ac9d76cfb92462b",
+        "GUID:207b332a1ab8e534b9a4e1f7f41e9227"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

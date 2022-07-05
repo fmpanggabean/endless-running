@@ -1,0 +1,16 @@
+{
+    "name": "EndlessRunning.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e3c022d80f750147ac9d76cfb92462b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "EndlessRunning.Core",
+    "rootNamespace": "",
+    "references": [
+        "GUID:207b332a1ab8e534b9a4e1f7f41e9227"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

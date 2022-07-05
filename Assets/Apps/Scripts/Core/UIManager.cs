@@ -1,9 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EndlessRunning.Base;
 
-namespace EndlessRunning.UI {
+namespace EndlessRunning.Core {
     public class UIManager : MonoBehaviour {
         public static UIManager instance;
         public SharedEvent sharedEvent;
@@ -16,6 +16,10 @@ namespace EndlessRunning.UI {
             else {
                 Destroy(gameObject);
             }
+        }
+
+        public void SetPauseEvent(Action onPauseGame) {
+            input.onPausePressed += onPauseGame;
         }
     }
 

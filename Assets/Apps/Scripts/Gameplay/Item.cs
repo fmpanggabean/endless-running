@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using EndlessRunning.Core;
 
 namespace EndlessRunning.Gameplay {
     public class Item : MonoBehaviour {

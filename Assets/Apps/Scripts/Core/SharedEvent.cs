@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EndlessRunning.Base {
+namespace EndlessRunning.Core {
     public class SharedEvent {
         public Action<int> onGetItem;
         public Action<int> onScoreAdded;

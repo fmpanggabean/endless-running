@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using EndlessRunning.Gameplay;
-using EndlessRunning.UI;
 
-namespace EndlessRunning.Base {
+namespace EndlessRunning.Core {
     public class EndlessRun : MonoBehaviour {
         private SharedEvent sharedEvent;
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EndlessRunning.Core;
 
 namespace EndlessRunning.UI {
     public class PauseMenuUI : MonoBehaviour {
@@ -13,7 +14,7 @@ namespace EndlessRunning.UI {
             UIManager.instance.sharedEvent.onResumeGame += Hide;
             UIManager.instance.sharedEvent.onPauseGame += Show;
 
-            UIManager.instance.input.onPausePressed += UIManager.instance.sharedEvent.onPauseGame;
+            UIManager.instance.SetPauseEvent(UIManager.instance.sharedEvent.onPauseGame);
             resumeButton.onClick.AddListener(UIManager.instance.sharedEvent.onResumeGame.Invoke);
 
             Hide();

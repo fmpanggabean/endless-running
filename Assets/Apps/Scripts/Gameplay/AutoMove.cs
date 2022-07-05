@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EndlessRunning.Core;
 
 namespace EndlessRunning.Gameplay {
     public class AutoMove : MonoBehaviour {
