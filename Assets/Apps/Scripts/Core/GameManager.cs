@@ -27,6 +27,14 @@ namespace EndlessRunning.Core {
 
         private void Start() {
             Time.timeScale = 0;
+
+
+            sharedEvent.onGetItem += AddScore;
+            sharedEvent.onGameStart += StartGame;
+            sharedEvent.onPauseGame += PauseGame;
+            sharedEvent.onResumeGame += ResumeGame;
+
+            input.onPausePressed += sharedEvent.onPauseGame;
         }
 
         private void Update() {
@@ -34,12 +42,6 @@ namespace EndlessRunning.Core {
         }
 
         private void OnEnable() {
-            sharedEvent.onGetItem += AddScore;
-            sharedEvent.onGameStart += StartGame;
-            sharedEvent.onPauseGame += PauseGame;
-            sharedEvent.onResumeGame += ResumeGame;
-
-            input.onPausePressed += sharedEvent.onPauseGame;
         }
 
         private void OnDisable() {

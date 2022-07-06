@@ -41,7 +41,7 @@ public class InputHandler : ScriptableObject, CustomInput.IGameplayActions {
     }
 
     public void OnPlayerMovement(InputAction.CallbackContext context) {
-        if (context.phase == InputActionPhase.Performed || context.phase == InputActionPhase.Canceled) {
+        if (context.phase == InputActionPhase.Performed) {
             onPlayerMovementPressed?.Invoke(context.ReadValue<float>());
         }
     }

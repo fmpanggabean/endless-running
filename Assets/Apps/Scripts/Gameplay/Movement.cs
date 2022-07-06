@@ -8,18 +8,12 @@ namespace EndlessRunning.Gameplay {
         [SerializeField] private float speed;
         private Vector3 direction;
 
-
-        private void Update() {
+        protected void Update() {
             UpdatePosition();
         }
 
         private void UpdatePosition() {
-            //transform.position = GetNextPosition();
             transform.position += GetOffset();
-        }
-
-        public Vector3 GetNextPosition() {
-            return transform.position + GetOffset();
         }
 
         internal void SetSpeed(float v) {

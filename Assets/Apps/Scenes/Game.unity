@@ -1564,6 +1564,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4931851944218429879, guid: 388eddb23748fc0498087e1542cfff5d, type: 3}
+      propertyPath: lanes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931851944218429879, guid: 388eddb23748fc0498087e1542cfff5d, type: 3}
+      propertyPath: lanes.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931851944218429879, guid: 388eddb23748fc0498087e1542cfff5d, type: 3}
+      propertyPath: lanes.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 388eddb23748fc0498087e1542cfff5d, type: 3}
 --- !u!4 &1424248005 stripped

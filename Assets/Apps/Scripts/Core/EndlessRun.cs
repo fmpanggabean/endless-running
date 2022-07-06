@@ -7,8 +7,12 @@ namespace EndlessRunning.Core {
         public GameManager gameManager;
         public UIManager uiManager;
 
+        private SharedEvent sh;
+
         private void Awake() {
-            new SharedEvent(gameManager, uiManager);
+            sh = new SharedEvent();
+            gameManager.sharedEvent = sh;
+            uiManager.sharedEvent = sh;
         }
     } 
 }
